@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<script>if(location.pathname==="/management")location.replace("/management/"+location.search+location.hash)</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>合作店家｜破局十六週</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="shops">
+<div id="hdr"></div>
+<main>
+<section class="page-hero">
+  <span class="kicker reveal" data-i18n="shops.k">Partner Shops</span>
+  <h1 class="reveal d1" data-i18n="shops.h">政大商圈店家</h1>
+  <p class="page-lead reveal d2" data-i18n="shops.lead">從指南路、萬壽路到新光路，學生吃了好幾年的老味道。點選店家看各人數的優惠方案。</p>
+</section>
+<section class="sec tight">
+  <div class="chips filter reveal" id="filter">
+    <button class="chip active" data-f="all" data-i18n="f.all">全部</button><button class="chip" data-f="中式" data-i18n="f.cn">中式</button><button class="chip" data-f="西式" data-i18n="f.west">西式</button><button class="chip" data-f="早午餐" data-i18n="f.brunch">早午餐 / 甜點</button><button class="chip" data-f="異國" data-i18n="f.intl">異國</button>
+  </div>
+  <div class="shop-grid" id="shopGrid"></div>
+  <p class="tiny" data-i18n="shops.note">優惠內容以店家現場公告為準。</p>
+</section>
+<dialog class="modal" id="shopModal"><div class="modal-body" id="modalBody"></div><button class="modal-x" id="modalX" aria-label="close">×</button></dialog>
+</main>
+<div id="ftr"></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<script>if(location.pathname==="/management")location.replace("/management/"+location.search+location.hash)</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關於我們｜破局十六週</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+<div id="hdr"></div>
+<main>
+<section class="page-hero">
+  <span class="kicker reveal" data-i18n="about.k">About Us</span>
+  <h1 class="reveal d1" data-i18n="about.h">關於我們</h1>
+</section>
+<section class="sec tight">
+  <div class="about">
+    <div class="about-text reveal">
+      <p class="about-lead" data-i18n-html="about.lead">我們是來自<b>國立政治大學</b>的一個小團隊。</p>
+      <p data-i18n="about.p1">一群在指南路吃過無數頓飯的學生。十六週學制上路後，我們看著熟悉的店家在長假裡一間間安靜下來，於是決定做點什麼。</p>
+      <p data-i18n="about.p2">破局十六週想做的事很簡單：讓動物園的遊客多走十分鐘來政大吃一餐，讓留校的同學不必一個人吃飯。商圈熱鬧了，我們的日常也就回來了。</p>
+      <div class="about-tags"><span data-i18n="about.tag1">跨域合作</span><span data-i18n="about.tag2">數位媒合</span><span data-i18n="about.tag3">分眾優惠</span><span data-i18n="about.tag4">三方共好</span></div>
+      <a class="btn btn-ghost" href="why.html" style="margin-top:26px" data-i18n="about.why">我們為什麼要做這個</a>
+    </div>
+    <div class="contact card reveal d1" id="contact">
+      <span class="tag" data-i18n="contact.tag">聯繫我們</span>
+      <h3 data-i18n="contact.h">店家合作・媒體・任何想法</h3>
+      <div class="contact-row"><span class="c-ico">👤</span><div><small data-i18n="contact.person">聯絡人</small><b data-i18n="contact.name">蕭志紘</b></div></div>
+      <a class="contact-row" href="tel:0905116999"><span class="c-ico">📞</span><div><small data-i18n="contact.phone">電話</small><b>0905-116-999</b></div></a>
+      <div class="contact-row"><span class="c-ico">📍</span><div><small data-i18n="contact.loc">據點</small><b data-i18n="contact.locv">國立政治大學・台北市文山區</b></div></div>
+      <div class="contact-actions">
+        <a class="btn btn-ink" href="tel:0905116999" data-i18n="contact.call">📞 立即撥打</a>
+        <button class="btn btn-ghost" id="copyBtn" type="button" data-i18n="contact.copy">複製電話</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div id="ftr"></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

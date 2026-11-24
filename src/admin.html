@@ -1,0 +1,39 @@
+<!--title:後台-->
+<!--noindex-->
+<section class="page-hero">
+  <span class="kicker">Dashboard</span>
+  <h1 data-i18n="admin.h">心動鈴後台</h1>
+</section>
+<section class="sec tight">
+  <form class="card login" id="loginForm">
+    <label><span data-i18n="admin.key">管理金鑰</span><input type="password" id="adminKey" autocomplete="current-password"></label>
+    <button class="btn btn-ink" type="submit" data-i18n="admin.enter">進入後台</button>
+  </form>
+  <div id="dash" hidden>
+    <div class="dash-bar">
+      <span class="muted" id="dashUpdated"></span>
+      <div class="dash-actions">
+        <button class="btn btn-ghost btn-sm" id="refreshBtn" data-i18n="admin.refresh">重新整理</button>
+        <button class="btn btn-ink btn-sm" id="csvBtn" data-i18n="admin.csv">匯出 CSV</button>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn" data-i18n="admin.logout">登出</button>
+      </div>
+    </div>
+    <div class="kpi-row" id="kpis"></div>
+    <div class="dash-grid">
+      <div class="card"><h3 data-i18n="admin.byTime">時段分布</h3><div class="bars" id="barTime"></div></div>
+      <div class="card"><h3 data-i18n="admin.byPref">飲食偏好</h3><div class="bars" id="barPref"></div></div>
+      <div class="card"><h3 data-i18n="admin.byPpl">希望人數</h3><div class="bars" id="barPpl"></div></div>
+      <div class="card"><h3 data-i18n="admin.byWho">身分</h3><div class="bars" id="barWho"></div></div>
+    </div>
+    <div class="card table-card">
+      <h3 data-i18n="admin.list">報名名單</h3>
+      <div class="table-wrap"><table id="bellTable"><thead><tr>
+        <th data-i18n="admin.c.time">送出時間</th><th data-i18n="bell.nick">暱稱</th><th data-i18n="bell.contact">聯絡方式</th><th data-i18n="bell.who">身分</th><th data-i18n="bell.date">用餐日期</th><th data-i18n="bell.time">時段</th><th data-i18n="bell.budget">預算／人</th><th data-i18n="bell.pref">飲食偏好</th><th data-i18n="bell.ppl">希望人數</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card table-card">
+      <h3 data-i18n="admin.coupons">轉盤優惠券紀錄</h3>
+      <div class="bars" id="barShop"></div>
+    </div>
+  </div>
+</section>

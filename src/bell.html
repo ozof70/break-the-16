@@ -1,0 +1,45 @@
+<!--title:心動鈴-->
+<section class="page-hero">
+  <span class="kicker reveal" data-i18n="bell.k">Holiday Meal Buddies</span>
+  <h1 class="reveal d1" data-i18n="bell.h">心動鈴</h1>
+  <p class="page-lead reveal d2" data-i18n="bell.lead">留校、外籍生、想吃合菜卻一個人點不了？填好條件按個鈴，我們幫你湊一桌。</p>
+</section>
+<section class="sec tight">
+  <div class="bell-wrap">
+    <form class="card bell-form reveal" id="bellForm" novalidate>
+      <div class="two">
+        <label><span data-i18n="bell.nick">暱稱</span><input type="text" id="bNick" maxlength="30" data-i18n-ph="bell.nickph" placeholder="大家怎麼稱呼你"></label>
+        <label><span data-i18n="bell.contact">聯絡方式</span><input type="text" id="bContact" maxlength="80" data-i18n-ph="bell.contactph" placeholder="LINE ID 或 Email"></label>
+      </div>
+      <div class="two">
+        <label><span data-i18n="bell.date">用餐日期</span><input type="date" id="bDate"></label>
+        <label><span data-i18n="bell.who">身分</span>
+          <select id="bWho"><option value="student" data-i18n="bell.who1">政大學生</option><option value="intl" data-i18n="bell.who2">外籍／交換生</option><option value="local" data-i18n="bell.who3">附近居民</option><option value="other" data-i18n="bell.who4">其他</option></select>
+        </label>
+      </div>
+      <div class="field"><span data-i18n="bell.time">時段</span>
+        <div class="chips" data-name="time"><button type="button" class="chip active" data-v="lunch" data-i18n="bell.t1">午餐 12:00</button><button type="button" class="chip" data-v="tea" data-i18n="bell.t2">下午茶 15:00</button><button type="button" class="chip" data-v="dinner" data-i18n="bell.t3">晚餐 18:30</button></div>
+      </div>
+      <div class="field"><span><span data-i18n="bell.budget">預算／人</span> <b id="budgetVal">$250</b></span><input type="range" id="budget" min="100" max="600" step="50" value="250"></div>
+      <div class="field"><span data-i18n="bell.pref">飲食偏好</span>
+        <div class="chips multi" data-name="pref"><button type="button" class="chip active" data-v="any" data-i18n="bell.p0">都可以</button><button type="button" class="chip" data-v="chinese" data-i18n="bell.p1">中式</button><button type="button" class="chip" data-v="western" data-i18n="bell.p2">西式</button><button type="button" class="chip" data-v="intl" data-i18n="bell.p3">異國</button><button type="button" class="chip" data-v="veg" data-i18n="bell.p4">素食</button></div>
+      </div>
+      <div class="field"><span data-i18n="bell.ppl">希望人數</span>
+        <div class="stepper"><button type="button" class="step" data-d="-1">−</button><b id="ppl">2</b><button type="button" class="step" data-d="1">+</button></div>
+      </div>
+      <label class="consent"><input type="checkbox" id="bConsent"><span data-i18n="bell.consent">我同意破局十六週依個人資料保護法蒐集上述資料，僅用於本次飯友媒合與通知，活動結束後刪除。</span></label>
+      <button class="btn btn-ink btn-lg" type="submit" id="ringBtn"><span class="bell-ico">🔔</span> <span data-i18n="bell.submit">按下心動鈴</span></button>
+    </form>
+    <div class="bell-result reveal d1" id="bellResult">
+      <div class="empty"><div class="big-bell">🔔</div><p data-i18n-html="bell.empty">填好條件，按下心動鈴<br>我們會依時間、預算與口味幫你配對飯友。</p></div>
+    </div>
+  </div>
+</section>
+<section class="sec tight">
+  <h2 class="mini-h reveal" data-i18n="bell.rulesh">安心規則</h2>
+  <div class="grid3">
+    <div class="pill-card reveal"><b data-i18n="bell.r1h">公開場所見面</b><p data-i18n="bell.r1p">首次見面一律在合作店家等公開營業場所。</p></div>
+    <div class="pill-card reveal d1"><b data-i18n="bell.r2h">彈性取消</b><p data-i18n="bell.r2p">用餐前 3 小時可免費取消；未成團會主動通知。</p></div>
+    <div class="pill-card reveal d2"><b data-i18n="bell.r3h">申訴管道</b><p data-i18n="bell.r3p">任何問題都可以透過關於我們頁面的聯繫方式找到我們。</p></div>
+  </div>
+</section>
